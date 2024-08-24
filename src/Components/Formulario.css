@@ -1,5 +1,7 @@
 
 .formulario{
+    background-color: #e0f7fa; /* Color de fondo para el formulario de login */
+    padding: 20px;
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -45,4 +47,14 @@
 .custom-button:active {
     background-color: #1c598a;
     transform: scale(0.95);
+}
+
+.home {
+    background-color: #f0f0f0; /* Color de fondo para la página Home */
+    padding: 20px; /* Espaciado interno */
+  }
+
+.formulario1 {
+    background-color: #f0f0f0; /* Color de fondo para la página Home */
+    padding: 20px;
 }

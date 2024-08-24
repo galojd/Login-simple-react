@@ -1,10 +1,13 @@
-import "./Formulario.css"
-import { useState } from "react"
+import "./Formulario.css";
+import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 // eslint-disable-next-line react/prop-types
 const Formulario = ({setUsuario}) => {
     const [ usuario, setUsario] = useState("");
     const [ password, setPassoword] = useState("");
     const [ error, setError] = useState(false);
+
+    const historico = useNavigate(); //esto es de enrutamiento
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -15,6 +18,7 @@ const Formulario = ({setUsuario}) => {
         }
         setError(false);
         setUsuario([usuario]);
+        historico.push('/'); //redirige a la pagina al iniciar sesión
     }
 
     return (
